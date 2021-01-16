@@ -1,0 +1,777 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Old Standard TT', serif;
+    color: rgb(51, 51, 51);
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.5;
+    /*background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.461),
+        rgba(255, 255, 255, 0.66)
+      ),
+      url('images/pianoBackgroundEditB.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;*/
+  }
+
+.jd-slideshow,
+.jd-slideshow:after {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+}
+
+.jd-slideshow-text,
+.jd-slideshow-text:after {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top:0px;
+    /*left: 0px;*/
+    z-index: 0;
+    list-style-type: none;
+}
+
+.jd-slideshow:after {
+    content: '';
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.461),
+        rgba(255, 255, 255, 0.66)
+      );
+}
+
+.jd-slideshow-text:after {
+    content: '';
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.461),
+        rgba(255, 255, 255, 0.66)
+      );
+}
+
+.jd-slideshow li span {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 30s linear infinite 0s;
+}
+
+.jd-slideshow-text li div {
+    z-index: 1000;
+    position: absolute;
+    /*bottom: -240px;*/
+    /*left: 0px;*/
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    animation: titleAnimation 30s linear infinite 0s;
+}
+
+.jd-slideshow-text li div p {
+    padding: 0;
+    line-height: 1.25;
+    /*margin-top: 170px;*/
+    margin-top: 200px;
+    /*margin-top: 60%;*/
+}
+
+.jd-slideshow li:nth-child(1) span {
+    background-image: url('images/pianoBackgroundEditB.jpeg')
+}
+
+.jd-slideshow li:nth-child(2) span {
+    background-image: url('images/TapB.jpg');
+    animation-delay: 6s;
+}
+
+.jd-slideshow li:nth-child(3) span {
+    background-image: url('images/studioBackgroundB.jpg');
+    animation-delay: 12s;
+}
+
+.jd-slideshow li:nth-child(4) span {
+    background-image: url('images/TapFloorA.jpg');
+    animation-delay: 18s;
+}
+
+.jd-slideshow li:nth-child(5) span {
+    background-image: url('images/studioBackgroundA.jpg');
+    animation-delay: 24s;
+}
+
+.jd-slideshow-text li:nth-child(2) div {
+    animation-delay: 6s;
+}
+
+.jd-slideshow-text li:nth-child(3) div {
+    animation-delay: 12s;
+}
+
+.jd-slideshow-text li:nth-child(4) div {
+    animation-delay: 18s;
+}
+
+.jd-slideshow-text li:nth-child(5) div {
+    animation-delay: 24s;
+}
+
+@keyframes imageAnimation {
+    0% { opacity:0; animation-timing-function: ease-in; }
+    8% { opacity: 1; animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+@keyframes titleAnimation {
+    0% { opacity:0 }
+    8% { opacity: 1 }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+.no-cssanimations .jd-slideshow li span {
+    opacity: 1;
+}
+
+.body-container {
+    position: relative;
+    padding: 0;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.navbar,
+footer {
+    padding: 3% 4%;
+    background-color: rgb(136, 174, 102);
+    color: white;
+    font-size: 20px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.navbar a, .social a {
+    color: white;
+    text-decoration: none;
+}
+
+.name {
+    font-family: 'Questrial', sans-serif;
+    font-size: 18px;
+    font-weight: bolder;
+    border: 1px white solid;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.hamburger {
+    background-color:rgb(136, 174, 102);
+    border: 0;
+    padding: 5px 5px;
+    cursor: pointer;
+}
+
+.icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: white;
+}
+
+.hamburger:hover {
+    background-color: gold;
+}
+
+.margin {
+    margin-top: 4px;
+}
+  
+.navbar a:hover {
+    color: gold;
+}
+
+.name:hover {
+    border: 1px gold solid;
+}
+
+.menu {
+    display: none;
+}
+
+.slider-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    background: linear-gradient(
+        to bottom,
+        rgb(136, 174, 102, 0.671),
+        rgb(136, 174, 102, 0.986)
+      );
+    position: absolute;
+    right: -100%;
+    visibility: hidden;
+    pointer-events: none;
+    transition: .2s all linear;
+    padding: 2.5% 3%;
+    list-style-type: none;
+}
+
+.slider-menu a {
+    font-family: 'Questrial', sans-serif;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.slider-menu a:hover {
+    color: gold;
+}
+
+.active {
+    visibility: visible;
+    pointer-events: inherit;
+    transition: .2s all ease-in-out;
+    right: 0;
+}
+
+header {
+    /*display: flex;
+    flex-direction: column;
+    justify-content: space-between;*/
+    min-height: 600px;
+    /*min-height: 480px;*/
+    padding: 12% 5%;
+    margin-top: 10%;
+}
+
+h1 {
+    font-size: 30px;
+    /*margin-top: 5%;*/
+    margin-top: 14.39px;
+    margin-bottom: 0;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 2px white;
+}
+
+header p {
+    line-height: 1.5;
+    /*margin-top: 65%;*/ 
+    text-shadow: 3px 3px 3px white;
+}
+
+/*.alternating-text {
+    margin-top: 60%;
+    line-height: 1.25;*/
+    /*color: rgb(34, 122, 169);*/
+    /*position: absolute;
+    bottom: 10%;
+    text-align: center;
+    padding-right: 5%;*/
+/*}*/
+
+.margin-change {
+    display: none;
+}
+
+p {
+    margin-top: 6%;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: .5px;
+    text-shadow: 2px 2px 2px white;
+}
+
+.bold-text {
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+/*.margin-change {
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.461),
+        rgba(255, 255, 255, 0.66)
+    );
+    border-radius: 5px;
+}*/
+
+.details-button {
+    display: block;
+    text-decoration: none;
+    color: rgb(86, 141, 170);
+    margin-top: 100px;
+}
+
+main {
+    margin-bottom: 15%;
+}
+
+.canvas {
+    text-align: left;
+    min-height: 200px;
+    padding: 14% 12%;
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.342),
+        rgba(255, 255, 255, 0.562)
+      ),
+      url('images/canvasBackgroundD.jpg');
+    background-size: cover;
+    /*background-color: white;*/
+    border-top: 1px gray solid;
+    border-bottom: 1px gray solid;
+    /*line-height: 0;*/
+}
+
+h2 {
+    font-family: 'Questrial', sans-serif;
+    color: rgb(86, 141, 170);
+    text-shadow: 1px 1px black;
+    margin-bottom: 9%;
+}
+
+.toggle-button {
+    background-color: gold;
+    color: white;
+    text-shadow: 1px 1px rgb(86, 141, 170);
+    border-color: rgb(86, 141, 170);
+    border-radius: 5px;
+    padding: 1% 2%;
+    margin-bottom: 5%;
+}
+
+.toggle-button:hover {
+    border-color: rgb(136, 174, 102);
+    color: rgb(136, 174, 102);
+    text-shadow: 1px 1px rgb(136, 174, 102);
+    /*background-color: rgb(255, 233, 108);*/
+}
+
+.hidden {
+    display: none;
+}
+
+.rotated {
+    transform: rotate(180deg);
+    animation: blink 1.5s ease-in infinite;
+}
+
+h3 .fa-angle-double-down {
+    color: rgb(86, 141, 170);
+    text-shadow: none;
+}
+
+.music-stand {
+    width: 40%;
+    max-width: 150px;
+    margin-left: 5%;
+    float: right;
+}
+
+.tap-shoes {
+    width: 50%;
+    max-width: 200px;
+    margin-left: 5%;
+    float: right;
+}
+
+.canvas ul li {
+    margin-top: 5px;
+}
+
+.lesson-title {
+    display: none;
+}
+
+.tap-details {
+    margin-top: 9%;
+}
+
+.about {
+    text-align: left;
+    min-height: 200px;
+    padding: 14% 8%; 
+    background-color: white;
+    /*background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.461),
+        rgba(255, 255, 255, 0.66)
+    );*/
+}
+
+.about-second-sentence {
+    display: block;
+    margin-top: 21px;
+}
+
+/*.gold-box {
+    width: 40%;
+    max-width: 250px;
+    line-height: 0;
+    /*width: 100px;
+    height: 130px;*/
+    /*margin-right: 5%;
+    margin-bottom: 3%;
+    float: left;
+    background-color: rgb(255, 215, 0);
+}*/
+
+.head-shot {
+    width: 40%;
+    max-width: 250px;
+    line-height: 0;
+    margin-right: 5%;
+    margin-bottom: 3%;
+    /*border: 1px gold solid;*/
+    float: left;
+    /*position: relative;*/
+    /*right: 10px;
+    top: 10px;*/
+}
+
+/*.about p {
+    margin-top: 55px;
+}*/
+
+.container {
+    text-align: left;
+    min-height: 200px;
+    padding: 14% 8%;
+}
+
+.project-image {
+    border: 1px gray solid;
+    width: 100%;
+    min-height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+
+.project-margin {
+    margin-top: 3%;
+}
+
+h3 {
+    margin-left: 0;
+    margin-top: 5%; 
+    font-family: 'Questrial', sans-serif;
+    font-size: 24px;
+}
+
+.teacher-title {
+    font-size:23px;
+}
+
+.project p {
+    margin-left: 0;
+    margin-top: 4%;
+}
+
+.technologies {
+    font-style: italic;
+    font-size: 22px;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Questrial', sans-serif;
+    font-size: 23px;
+    background-color:  rgb(11, 0, 61);
+    color: white;
+    border: 2px rgb(88, 88, 88) solid;
+    padding: 1.5% 3%;
+    margin: 6% 5% 4% 0;
+    cursor: pointer;   
+}
+
+/*.button {
+    margin-top: 6%;
+    margin-bottom: 4%;
+    margin-left: 0;
+    font-size: 23px;
+    padding: 1.5% 3%;
+    background-color:  rgb(11, 0, 61);
+    color: white;
+    cursor: pointer;
+}*/
+
+.button:hover {
+    color: gold;
+    border: 2px gold solid;
+}
+
+.contact-two a {
+    /*color: rgb(136, 174, 102);
+    text-shadow: 1px 1px 1px rgb(77, 99, 58);*/
+    color: rgb(67, 127, 159);
+}
+
+.contact-two a:hover {
+    color: gold;
+}
+
+footer {
+    margin-top: 2%;
+}
+
+footer ul {
+    padding: 0;
+}
+
+.social {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+
+.social p {
+    margin-top: 0;
+    color: white;
+    text-shadow: none;
+}
+
+.blink {
+    animation: blink 1.5s ease-in infinite;
+}
+  
+.social_icon {
+    margin-left: 2px;
+    margin-right: 2px;
+    cursor: pointer;
+}
+
+.fa {
+    color: gold;
+}
+
+.social-links:hover {
+    color: gold;
+}
+
+@keyframes blink {
+    from, to { opacity: 1 }
+    50% { opacity: 0 }
+}
+
+@media screen and (min-width: 700px) {
+    .navbar,
+    footer {
+        padding: 2% 3%;
+    }
+
+    .hamburger {
+        display: none;
+    }
+    
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        list-style-type: none;
+        font-family: 'Questrial', sans-serif;
+    }
+    
+    .navbar > ul > li {
+        margin-left: 30px;
+        cursor: pointer;
+    }
+    
+    .navbar > ul > li:hover {
+        color: gold;
+    }
+
+    .slider-menu {
+        display: none;
+    }
+
+    header {
+        margin-top: 2%;
+    }
+
+    h1 {
+        margin-top: 40px;
+        font-size: 40px;
+    }
+
+    .hero-image {
+        margin-top: 3%;
+    }
+
+    .jd-slideshow-text li div {
+        left: 10%;
+        width: 80%;
+    }
+
+    .jd-slideshow-text li div p {
+        margin-top: 250px;
+        font-size: 22px;
+    }
+
+    .margin-change {
+        margin-top: 4%;
+    }
+
+    /*.bold-text {
+        display: block;
+    }*/
+
+    /*header p {
+        text-align: left;
+    }*/
+
+    .canvas {
+        padding-left: 12%;
+        padding-right: 12%;
+        line-height: 2;
+    }
+
+    .lesson-title {
+        display: block;
+    }
+
+    .toggle-button {
+        display: none;
+    }
+
+    .js-lesson-details {
+        display: block;
+    }
+
+    .container {
+        padding-left: 12%;
+        padding-right: 12%;
+    }
+
+    .about-second-sentence {
+        display: inline;
+        margin-top: 0;
+    }
+
+    /*.contact-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }*/
+
+    /*.contact-container {
+        text-align: center;
+    }*/
+}
+
+@media screen and (min-width: 1024px) {
+    .name {
+        font-size: 25px;
+    }
+
+    .navbar, footer {
+        font-size: 23px;
+        padding: 1.5% 3%;
+    }
+
+    .navbar > ul > li {
+        margin-left: 50px;
+    }
+
+    header {
+        margin-top: 0;
+        /*padding: 9% 25%;*/
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    .jd-slideshow li span  {
+        background-position: left;
+    }
+
+    .hero-image {
+        width: 250px;
+        margin-top: 1%;
+        margin-bottom: 0;
+    }
+
+    /*.jd-slideshow-text li div {
+        left: 0;
+        width: 30%;
+    }
+
+    .jd-slideshow-text li div p {
+        margin-top: 100px;
+        font-size: 22px;
+    }*/
+
+    header p {
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .canvas, .container {
+        padding: 9% 15%;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    .canvas p, .container p {
+        font-size: 25px;
+    }
+
+    h3 {
+        font-size: 27px;
+    }
+}
