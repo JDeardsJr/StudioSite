@@ -389,10 +389,11 @@ h2 {
 }
 
 .toggle-button:hover {
-    border-color: rgb(136, 174, 102);
+    /*border-color: rgb(136, 174, 102);
     color: rgb(136, 174, 102);
-    text-shadow: 1px 1px rgb(136, 174, 102);
+    text-shadow: 1px 1px rgb(136, 174, 102);*/
     /*background-color: rgb(255, 233, 108);*/
+    transform: scale(1.2);
 }
 
 .hidden {
@@ -475,6 +476,12 @@ h3 .fa-angle-double-down {
     /*position: relative;*/
     /*right: 10px;
     top: 10px;*/
+}
+
+.lauren {
+    margin-right: 0;
+    margin-left: 5%;
+    float: right;
 }
 
 /*.about p {
@@ -731,12 +738,13 @@ footer ul {
     }
 
     h1 {
+        margin-top: 25px;
         font-size: 50px;
     }
 
-    .jd-slideshow li span  {
+    /*.jd-slideshow li span  {
         background-position: left;
-    }
+    }*/
 
     .hero-image {
         width: 250px;
