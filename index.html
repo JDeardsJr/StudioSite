@@ -30,7 +30,10 @@
     <div class="body-container">
         <nav role="navigation">
             <div class="navbar">
-                <a href="#home" class="name">JDStudios</a>
+                <!--<a href="#home" class="name">JDStudios</a>-->
+                <a href="#home">
+                    <img class="logo" src="images/JDSLogoA.png" alt="JDS">
+                </a>
                 <button class="hamburger js-hamburger">
                     <div class="icon-bars">
                         <span class="icon-bar"></span>
@@ -71,7 +74,7 @@
             </div>
         
         </nav>
-        <header role="banner" class="background" id="home">
+        <header role="banner" class="background full-height" id="home">
             <h1>Welcome to <span class="bold-text">JDStudios!</span></h1>
             <ul class="jd-slideshow-text">
                 <li>
@@ -100,23 +103,17 @@
                     </div>
                 </li>
             </ul>
-            <!--<p id="alternating-text" class="alternating-text">Currently specializing in virtual, one-on-one voice & tap lessons.</p>-->
-            <!--<img class="hero-image" src="images/diannaPicA.jpeg" alt="A sketched picture of Dianna">-->
-            <p class="margin-change">Currently specializing in virtual, one-on-one voice lessons.</p>
-            <!--<a class="jumper js-about-button details-button" href="#main-container">More Info  <i class="fa fa-angle-double-down"></i></a>-->
-            <!--</div>-->
         </header>
         <main role="main" id="main-container">
 
             <section class="canvas" id="details">
                 <h2>Lesson Details</h2>
-                <!--<h3>Voice</h3>-->
                 <section class="voice-details">
                     <h3 class="lesson-title">Voice</h3>
-                    <button class="js-voice-button toggle-button">
+                    <button class="toggle-button">
                         <h3>Voice <span><i class="fa fa-angle-double-down"></i></span></h3>
                     </button>
-                    <div class="js-lesson-details hidden">
+                    <div class="js-section-details details hidden">
                         <img class="music-stand" src="images/musicStandEdit.png" alt="An illustrated music stand">
                         <ul>
                             <li>Personalized instruction tailored to your specific goals and needs.</li>
@@ -125,7 +122,7 @@
                             
                             <li>All levels of experience welcome.</li>
                             
-                            <!--<li>30, 45, and 60 minute lesson options</li>-->
+                            <li>30, 45, and 60 minute lesson options</li>
                             
                             <li>First lesson half-off!</li>
                             
@@ -135,41 +132,42 @@
                 </section>
                 <section class="tap-details">
                     <h3 class="lesson-title">Tap</h3>
-                    <button class="js-tap-button toggle-button">
+                    <button class="toggle-button">
                         <h3>Tap <span><i class="fa fa-angle-double-down"></i></span></h3>
+                        <!--<i class="fa fa-angle-double-down"></i>-->
                     </button>
-                    <div class="js-lesson-details hidden">
+                    <div class="js-section-details details hidden">
                         <img class="tap-shoes" src="images/Tap-Shoes-PNG-Transparent-Image.png" alt="Tap Shoes">
                         <ul>
                             <li>Personalized instruction tailored to your specific goals and needs.</li>
             
-                            <li>An emphasis on healthy vocal production applied to all styles of singing.</li>
+                            <li>Beginner-focused steps, movement combinations, and improvisation.</li>
                             
-                            <li>All levels of experience welcome.</li>
+                            <li>Focus on building safe, sustainable habits while learning the fundamentals of tap dance.</li>
                             
-                            <!--<li>30, 45, and 60 minute lesson options</li>-->
+                            <li>30 and 45 minute lesson options</li>
                             
                             <li>First lesson half-off!</li>
                             
-                            <li>Ages 10 and up. For children under 10, please email or call for a free consultation.</li>
+                            <li>Ages 9 and up. For children under 9, please email or call for a free consultation.</li>
                         </ul>
                     </div>
                 </section>
                 <section class="tap-details">
                     <h3 class="lesson-title">Acting</h3>
-                    <button class="js-tap-button toggle-button">
+                    <button class="toggle-button">
                         <h3>Acting <span><i class="fa fa-angle-double-down"></i></span></h3>
                     </button>
-                    <div class="js-lesson-details hidden">
+                    <div class="js-section-details details hidden">
                         <img class="tap-shoes" src="images/TheatreMasks.png" alt="Comedy/Tragedy Masks">
                         <ul>
                             <li>Personalized instruction tailored to your specific goals and needs.</li>
             
-                            <li>An emphasis on healthy vocal production applied to all styles of singing.</li>
+                            <li>Currently offering lessons focused on monologue work, as well as acting through song (Vocal Performance).</li>
                             
                             <li>All levels of experience welcome.</li>
                             
-                            <!--<li>30, 45, and 60 minute lesson options</li>-->
+                            <li>30 and 45 minute lesson options</li>
                             
                             <li>First lesson half-off!</li>
                             
@@ -177,90 +175,116 @@
                         </ul>
                     </div>
                 </section>
-            </section>
+                <section class="tuition">
+                    <h3 class="lesson-title">Tuition/Scheduling</h3>
+                    <button class="toggle-button">
+                        <h3>Tuition/Schedule <span><i class="fa fa-angle-double-down"></i></span></h3>
+                    </button>
+                    <div class="js-section-details details tuition-section hidden">
+                        <div class="tuition-container">
+                            <div class="tuition-box">
+                                <h3 class="box-heading">Weekly 30 min Lessons</h3>
+                                <p class="discount spacing">Spacing</p>
+                                <p><span>$100</span> per month</p>
+                                <p class="discount">(4 Lesson Discount)</p>
+                                <p>~ or ~</p>
+                                <p><span>$35</span> per lesson</p>
+                                <a class="tuition-button" href="https://docs.google.com/forms/d/e/1FAIpQLSf9-awvEMvvLUrssKu2pVWl83HWY2aq3hV8bVFmzuSFZz44fw/viewform?usp=sf_link" target="_blank">Request More Info</a>
+                            </div>
+                            <div class="tuition-box">
+                                <h3 class="box-heading">Weekly 45 min Lessons</h3>
+                                <p class="discount spacing">Spacing</p>
+                                <p><span>$150</span> per month</p>
+                                <p class="discount">(4 Lesson Discount)</p>
+                                <p>~ or ~</p>
+                                <p><span>$48</span> per lesson</p>
+                                <a class="tuition-button" href="https://docs.google.com/forms/d/e/1FAIpQLSf9-awvEMvvLUrssKu2pVWl83HWY2aq3hV8bVFmzuSFZz44fw/viewform?usp=sf_link" target="_blank">Request More Info</a>
+                            </div>
+                            <div class="tuition-box">
+                                <h3 class="box-heading">Weekly 60 min Lessons</h3>
+                                <p class="discount">*Voice Only</p>
+                                <p><span>$200</span> per month</p>
+                                <p class="discount">(4 Lesson Discount)</p>
+                                <p>~ or ~</p>
+                                <p><span>$60</span> per lesson</p>
+                                <a class="tuition-button" href="https://docs.google.com/forms/d/e/1FAIpQLSf9-awvEMvvLUrssKu2pVWl83HWY2aq3hV8bVFmzuSFZz44fw/viewform?usp=sf_link" target="_blank">Request More Info</a>
+                            </div>
+                        </div>
+                        <div class="schedule">
+                            <h3><span class="logo-styling">JDStudios</span> currently offers a wide range of lesson times to accomodate your busy schedule:</h3>
+                            <ul class="schedule-times">
+                                <li>~ Mon-Fri 12pm - 8pm</li>
+                                <li>~ Sat-Sun 10am - 5pm</li>
+                            </ul>
+                            <p>We'd love to help find a lesson time, and plan, that works for you.</p>  
+                            <p class="sans">Ready to get started? <span><a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSd2DYm2Yyt88VCXTpXH5Ho3YFOH-87BQVo8hsLR06ZgPcq66A/viewform?usp=sf_link" target="_blank">Contact Us Now!</a></span></p>
 
-                <!--<section id="voice-details" class="voice-details results">
-                    <div class="voice-banner">
-                        <h3 class="title">Voice</h3>
-                        <button class="js-voice-button toggle-button">
-                            <i class="arrow-down"></i>
-                        </button>
+                        </div>
                     </div>
-                    <div id="voice-scroller" class="lesson-scroller hidden">
-                        <img class="music-stand" src="images/musicStandEdit.png" alt="An illustrated music stand">
-                        <ul id="voice-results-list">
-                            <li>Personalized instruction tailored to your specific goals and needs.</li>
-            
-                            <li>An emphasis on healthy vocal production applied to all styles of singing.</li>
-                            
-                            <li>All levels of experience welcome.</li>-->
-                            
-                            <!--<li>30, 45, and 60 minute lesson options</li>-->
-                            
-                            <!--<li>First lesson half-off!</li>
-                            
-                            <li>Ages 10 and up. For children under 10, please email or call for a free consultation.</li>
-                        </ul>
-                    </div>
-                </section>-->
+                </section>
+            </section>
 
             <section class="about" id="about">
                 <h2>About</h2>
                 <section>
-                    <div class="gold-box">
+                    <p>JDStudios was created for the purpose of providing high-quality, virtual lessons to students of all ages, backgrounds, and aspirations. Each lesson is designed to fit the student’s needs and goals and offered by skilled teachers who know their craft. <span class="about-second-sentence">In addition to training and extensive performance experience, our teachers have a combined 30 years of teaching experience. You can learn more about our instructors in their bios below.</span></p>
+                    <p>Whether you are seeking to explore a creative outlet, prepare for college auditions, brush up some old skills or learn some new ones, our staff is ready to help! We are dedicated to your success and excited for the opportunity to to/and we look forward to working with you!</p>
+                </section>
+                <section class="dianna-info">
+                    <div class="color-box">
                         <img class="head-shot" src="images/DiannaPhotoEditC.png" alt="A sketched picture of Dianna">
                     </div>
                     <h3 class="teacher-title">Voice</h3>
-                    <p>Welcome to JD Studios! My name is Dianna. I have a Bachelor of Music in Vocal Performance from Biola University and earned my Master of Music in Musical Theater from Oklahoma City University.  <span class="about-second-sentence">Since I began teaching in 2008, I’ve enjoyed teaching one-on-one voice lessons, leading group voice, piano, and musical theater classes, and working as a music director and vocal coach for numerous adult and children's theatre productions.</span></p>  
-                    <p>I've had the privilege of working with hundreds of students with widely differing skill levels and musical backgrounds and I am passionate about helping each of my students reach their personal goals, learn healthy vocal technique, and gain confidence in their singing abilities. I look forward to talking with you about your musical background, interests, and goals.</p>
+                    <h4 class="teacher-name">Dianna Hollowell</h4>
+                    <button class="toggle-button bio-button">
+                        <h3>More <span><i class="fa fa-angle-double-down"></i></span></h3>
+                    </button>
+                    <div class="js-section-details biography hidden">
+                        <p>Hello!  My name is Dianna. I have a Bachelor of Music in Vocal Performance from Biola University and earned my Master of Music in Musical Theater from Oklahoma City University.  <span class="about-second-sentence">In addition to performing in both musicals and operas, I’ve enjoyed teaching one-on-one voice lessons, leading group voice, piano, and musical theater classes, and working as a music director and vocal coach for numerous adult and children's theatre productions.</span></p>  
+                        <p>Since I began teaching in 2008, I've had the privilege of working with hundreds of students with widely differing skill levels and musical backgrounds and I am passionate about helping each of my students reach their personal goals, learn healthy vocal technique, and gain confidence in their singing abilities. I look forward to talking with you about your musical background, interests, and goals.</p>
+                    </div>
                 </section>
-                <section>
-                    <div class="gold-box">
-                        <img class="head-shot lauren" src="images/LaurenPhoto3.png" alt="A sketched picture of Laurie">
+                <section class="laurie-info">
+                    <div class="color-box laurie-pic-container">
+                        <img class="head-shot laurie-pic" src="images/LaurenPhoto3.png" alt="A sketched picture of Laurie">
                     </div>
                     <h3 class="teacher-title">Tap</h3>
-                    <p>Welcome to JD Studios! My name is Dianna. I have a Bachelor of Music in Vocal Performance from Biola University and earned my Master of Music in Musical Theater from Oklahoma City University.  <span class="about-second-sentence">Since I began teaching in 2008, I’ve enjoyed teaching one-on-one voice lessons, leading group voice, piano, and musical theater classes, and working as a music director and vocal coach for numerous adult and children's theatre productions.</span></p>  
-                    <p>I've had the privilege of working with hundreds of students with widely differing skill levels and musical backgrounds and I am passionate about helping each of my students reach their personal goals, learn healthy vocal technique, and gain confidence in their singing abilities. I look forward to talking with you about your musical background, interests, and goals.</p>
+                    <h4 class="teacher-name">Laurie Chase</h4> 
+                    <button class="toggle-button bio-button">
+                        <h3>More <span><i class="fa fa-angle-double-down"></i></span></h3>
+                    </button>
+                    <div class="js-section-details biography hidden">
+                        <p>Hi, I’m Laurie! Growing up in a community theatre environment, I was beyond excited to get my first pair of tap shoes when I was six years old – and I’ve had a pair within reach ever since!  <span class="about-second-sentence">My earliest teaching experience was assisting with instruction for beginning and intermediate tappers. While earning a degree at Cal Poly Pomona (B.A. in English, Education Emphasis), I taught performance skills to young people in elementary, middle, and high school settings. As a choreographer for local musical theatre productions, I’ve now been able to dance with people of all ages.</span></p>  
+                        <p>I love teaching movement skills to performers. I’m dedicated to seeing each learner as an individual, helping them to succeed and feel their best while dancing. We work together to build safe, sustainable habits and find joy in movement!</p>
+                    </div>                   
                 </section>
-                <section>
-                    <div class="gold-box">
+                <section class="jeff-info">
+                    <div class="color-box jeff-pic-container">
                         <img class="head-shot" src="images/JeffPhoto2.png" alt="A sketched picture of Laurie">
                     </div>
-                    <h3 class="teacher-title">Acting/General Manager</h3>
-                    <p>Welcome to JD Studios! My name is Dianna. I have a Bachelor of Music in Vocal Performance from Biola University and earned my Master of Music in Musical Theater from Oklahoma City University.  <span class="about-second-sentence">Since I began teaching in 2008, I’ve enjoyed teaching one-on-one voice lessons, leading group voice, piano, and musical theater classes, and working as a music director and vocal coach for numerous adult and children's theatre productions.</span></p>  
-                    <p>I've had the privilege of working with hundreds of students with widely differing skill levels and musical backgrounds and I am passionate about helping each of my students reach their personal goals, learn healthy vocal technique, and gain confidence in their singing abilities. I look forward to talking with you about your musical background, interests, and goals.</p>
+                    <h3 class="teacher-title small">Acting/G.M.</h3>
+                    <h3 class="teacher-title large">Acting/ General Manager</h3>
+                    <h4 class="teacher-name">Jeff Deards</h4>
+                    <button class="toggle-button bio-button">
+                        <h3>More <span><i class="fa fa-angle-double-down"></i></span></h3>
+                    </button>
+                    <div class="js-section-details biography hidden">
+                        <p>Welcome to JD Studios! I'm Jeff. Having grown up in the So Cal community theatre scene, I attended California State University Fullerton where I graduated with a BFA in Musical Theatre and spent the next several years performing professionally on both coasts.  <span class="about-second-sentence">Along with my on-stage theatrical work, I've had the opportunity to appear as a featured vocalist for the Florida Orchestra's Holiday Pops concert, as well as perform in Europe where I recorded with the London Symphony Orchestra at Abbey Road Studios.</span></p>  
+                        <p>In addition to performing, I have had the privelidge to spend the last several years teaching, directing, and producing both youth and adult theatre.  I particularly love working with students and actors to help build their skills so as to be able to tell clearer stories on stage.  As the General Manager of JDStudios, I'm here to assist you so please feel free to reach out at any time!</p>
+                    </div> 
                 </section>
             </section>
-
-            <!--<section class="container" id="projects">
-                <h2>My Projects</h2>
-                <section class="project">
-                    <img class="project-image" src="images/QuizAppScreenshotEdit.png" alt="A screenshot of the Musical Theatre Quiz start screen">
-                    <h3>Musical Theatre Quiz</h3>
-                    <p>An interactive quiz app that takes users through a brief series of questions to test their knowledge of Musical Theatre.  This app was an homage to my childhood and young adult life spent on the stage.</p>
-                    <p class="technologies">Technologies used: HTML, CSS, Javascript, jQuery</p>
-                    <a class="button" href="https://github.com/JDeardsJr/Quiz-App-Assignment.git" target="_blank">GitHub</a>
-                    <a class="button" href="https://jdeardsjr.github.io/Quiz-App-Assignment/" target="_blank">Live App</a>
-                </section>
-
-                <section class="project">
-                    <img class="project-image project-margin" src="images/PurplePressScreenshot.png" alt="A screenshot of the Musical Theatre Quiz start screen">
-                    <h3>PurplePress</h3>
-                    <p>A news app which allows users to search for specific topics, or top news of the day, and displays article results based on the article source's bias.</p>
-                    <p class="technologies">Technologies used: HTML, CSS, Javascript, jQuery</p>
-                    <a class="button" href="https://github.com/JDeardsJr/PurplePressApp.git" target="_blank">GitHub</a>
-                    <a class="button" href="https://jdeardsjr.github.io/PurplePressApp/" target="_blank">Live App</a>
-                </section>
-            </section>-->
 
             <section class="canvas" id="contact">
                 <h2>Let's Chat!</h2>
                 <div class="contact-container">
                     <div class="contact-one">
-                        <p>Whether you are just starting out and want to learn the basics of singing or tap, or need assistance keeping your voice in shape for auditions, performances, and gigs, JD Studios can help!</p>
+                        <p>Whether you are just starting out and want to learn the basics of singing, tap, or acting, or would like assistance keeping yourself in shape for auditions, performances, and gigs, <span class="logo-styling">JDStudios</span> can help!</p>
+                        <p><span class="bold">Ready to get started?</span>  Click the button below and fill out a quick Student Inquiry Form!</p>
+                        <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSd2DYm2Yyt88VCXTpXH5Ho3YFOH-87BQVo8hsLR06ZgPcq66A/viewform?usp=sf_link" target="_blank">Let's Go!!!</a>
                     </div>
                     <div class="contact-two">
-                        <p>Email <a href="mailto:jdstudios2021@gmail.com">JDStudios2021@gmail.com</a> or call <a href="tel:9098331554">909-833-1554</a> for more information or to schedule your first lesson.</p>
+                        <p>Need more information?  Email <a href="mailto:jdstudios2021@gmail.com">JDStudios2021@gmail.com</a> or call <a href="tel:9098331554">909-833-1554</a> for questions or to schedule your first lesson.</p>
                     </div>
                 </div>
             </section>

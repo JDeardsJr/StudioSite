@@ -14,17 +14,7 @@ body {
     font-size: 20px;
     text-align: center;
     line-height: 1.5;
-    /*background: linear-gradient(
-        to bottom,
-        rgba(255, 255, 255, 0.461),
-        rgba(255, 255, 255, 0.66)
-      ),
-      url('images/pianoBackgroundEditB.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;*/
-  }
+}
 
 .jd-slideshow,
 .jd-slideshow:after {
@@ -40,7 +30,7 @@ body {
 .jd-slideshow-text:after {
     position: relative;
     width: 100%;
-    height: 100%;
+    /*height: 100%;*/
     top:0px;
     /*left: 0px;*/
     z-index: 0;
@@ -51,8 +41,11 @@ body {
     content: '';
     background: linear-gradient(
         to bottom,
-        rgba(255, 255, 255, 0.461),
-        rgba(255, 255, 255, 0.66)
+        /*rgba(255, 255, 255, 0.461),
+        rgba(255, 255, 255, 0.66)*/
+        rgba(255, 255, 255, 0.639),
+        rgba(165, 165, 165, 0.66)
+
       );
 }
 
@@ -62,6 +55,8 @@ body {
         to bottom,
         rgba(255, 255, 255, 0.461),
         rgba(255, 255, 255, 0.66)
+        /*rgba(116, 116, 116, 0.66)*/
+
       );
 }
 
@@ -86,6 +81,7 @@ body {
     /*bottom: -240px;*/
     /*left: 0px;*/
     width: 100%;
+    height: auto;
     text-align: center;
     opacity: 0;
     animation: titleAnimation 30s linear infinite 0s;
@@ -94,13 +90,11 @@ body {
 .jd-slideshow-text li div p {
     padding: 0;
     line-height: 1.25;
-    /*margin-top: 170px;*/
-    margin-top: 200px;
-    /*margin-top: 60%;*/
+    margin-top: 0;
 }
 
 .jd-slideshow li:nth-child(1) span {
-    background-image: url('images/pianoBackgroundEditB.jpeg')
+    background-image: url('images/pianoBackgroundEditL.jpeg')
 }
 
 .jd-slideshow li:nth-child(2) span {
@@ -109,7 +103,7 @@ body {
 }
 
 .jd-slideshow li:nth-child(3) span {
-    background-image: url('images/studioBackgroundB.jpg');
+    background-image: url('images/DeskLaptopTest6.png');
     animation-delay: 12s;
 }
 
@@ -208,6 +202,15 @@ footer {
     padding-right: 1%;
 }
 
+.logo {
+    width: 50px;
+    display: block;
+}
+
+.logo:hover {
+    border: 2px gold solid;
+}
+
 .hamburger {
     background-color:rgb(136, 174, 102);
     border: 0;
@@ -283,39 +286,35 @@ footer {
 }
 
 header {
-    /*display: flex;
+    display: flex;
     flex-direction: column;
-    justify-content: space-between;*/
-    min-height: 600px;
-    /*min-height: 480px;*/
-    padding: 12% 5%;
-    margin-top: 10%;
+    justify-content: space-evenly;
+    height: 100vh;
+    padding: 0 5% 12% 5%;
 }
 
 h1 {
+    font-family: Oriya MN; 
     font-size: 30px;
-    /*margin-top: 5%;*/
-    margin-top: 14.39px;
+    font-weight: 400;
     margin-bottom: 0;
     letter-spacing: 3px;
     text-shadow: 2px 2px 2px white;
 }
 
-header p {
-    line-height: 1.5;
-    /*margin-top: 65%;*/ 
-    text-shadow: 3px 3px 3px white;
+.bold-text {
+    display: block;
+    font-size: 50px;
+    font-weight: 500;
 }
 
-/*.alternating-text {
-    margin-top: 60%;
-    line-height: 1.25;*/
-    /*color: rgb(34, 122, 169);*/
-    /*position: absolute;
-    bottom: 10%;
-    text-align: center;
-    padding-right: 5%;*/
-/*}*/
+header p {
+    line-height: 1.5;
+    font-family: sans-serif;
+    text-shadow: 3px 3px 3px black;
+    color: ghostwhite;
+    font-weight: lighter;
+}
 
 .margin-change {
     display: none;
@@ -327,11 +326,6 @@ p {
     font-size: 20px;
     letter-spacing: .5px;
     text-shadow: 2px 2px 2px white;
-}
-
-.bold-text {
-    font-size: 50px;
-    font-weight: bolder;
 }
 
 /*.margin-change {
@@ -365,10 +359,8 @@ main {
       ),
       url('images/canvasBackgroundD.jpg');
     background-size: cover;
-    /*background-color: white;*/
     border-top: 1px gray solid;
     border-bottom: 1px gray solid;
-    /*line-height: 0;*/
 }
 
 h2 {
@@ -378,22 +370,67 @@ h2 {
     margin-bottom: 9%;
 }
 
-.toggle-button {
-    background-color: gold;
+.button {
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Questrial', sans-serif;
+    font-size: 23px;
+    background: linear-gradient(
+        to bottom,
+        rgb(193, 164, 0),
+        gold
+    );
     color: white;
-    text-shadow: 1px 1px rgb(86, 141, 170);
+    text-shadow: 1px 1px gray;
+    border: 2px white solid;
+    border-radius: 5px;
+    padding: 1.5% 3%;
+    margin: 6% 5% 4% 0;
+    cursor: pointer;   
+}
+
+/*.button {
+    margin-top: 6%;
+    margin-bottom: 4%;
+    margin-left: 0;
+    font-size: 23px;
+    padding: 1.5% 3%;
+    background-color:  rgb(11, 0, 61);
+    color: white;
+    cursor: pointer;
+}*/
+
+.button:hover {
+    /*color: gold;
+    border: 2px gold solid;*/
+    text-shadow: 1px 1px silver;
+    border: 2px silver solid;
+    /*font-size: 26px;*/
+}
+
+.toggle-button {
+    background: linear-gradient(
+        to bottom,
+        rgb(193, 164, 0),
+        gold
+    );
+    color: ghostwhite;
+    text-shadow: 1px 1px rgb(67, 67, 67);
     border-color: rgb(86, 141, 170);
     border-radius: 5px;
-    padding: 1% 2%;
+    padding: 2% 2%;
     margin-bottom: 5%;
+    width: 100%;
 }
 
 .toggle-button:hover {
-    /*border-color: rgb(136, 174, 102);
-    color: rgb(136, 174, 102);
-    text-shadow: 1px 1px rgb(136, 174, 102);*/
-    /*background-color: rgb(255, 233, 108);*/
-    transform: scale(1.2);
+    /*transform: scale(1.2);*/
+    text-shadow: 1px 1px silver;
+    border: 2px silver solid;
+}
+
+.toggle-button h3 {
+    margin-top: 0;
 }
 
 .hidden {
@@ -408,6 +445,7 @@ h2 {
 h3 .fa-angle-double-down {
     color: rgb(86, 141, 170);
     text-shadow: none;
+    margin-left: 2%;
 }
 
 .music-stand {
@@ -432,8 +470,100 @@ h3 .fa-angle-double-down {
     display: none;
 }
 
-.tap-details {
+.tap-details, .tuition {
     margin-top: 9%;
+}
+
+.tuition-box {
+    background-color: white;
+    border: 3px rgb(136, 174, 102) solid;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 1;
+    margin-top: 2%;
+    padding: 0 1%;
+}
+
+.box-heading {
+    color: rgb(136, 174, 102);
+    text-shadow:1px 1px rgb(0, 0, 0);
+    font-weight: bolder;
+}
+
+.spacing {
+    color: rgba(255, 255, 255, 0);
+}
+
+.tuition-box p {
+    line-height: 1;
+}
+
+.discount {
+    font-size: 15px;
+    margin-top: 3px;
+}
+
+.tuition-button {
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Questrial', sans-serif;
+    font-size: 23px;
+    background: linear-gradient(
+        to bottom,
+        rgb(136, 174, 102),
+        rgb(159, 206, 118)
+    );
+    color: white;
+    text-shadow: 1px 1px gray;
+    border: 2px white solid;
+    border-radius: 5px;
+    padding: 1.5% 3%;
+    margin-top: 25px;
+    margin-bottom: 4%;
+    cursor: pointer;   
+}
+
+.tuition-button:hover {
+    color: gold;
+    border: 2px gold solid;
+}
+
+.schedule {
+    /*background-color: rgba(255, 255, 255, 0.413);
+    border: 3px rgb(136, 174, 102) solid;
+    border-radius: 10px;
+    margin-top: 2%;*/
+    text-align: center;
+}
+
+.schedule h3 {
+    line-height: 1.5;
+}
+
+h4 {
+    margin-top: 10%;
+}
+
+.logo-styling {
+    font-family: Oriya MN; 
+    text-shadow: 2px 2px 2px rgb(174, 174, 174);
+}
+
+.schedule-times {
+    text-align: center;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    list-style-type: none;
+    background-color: white;
+    border: 2px gray solid;
+    border-radius: 3px;
+    box-shadow: 1px 1px rgb(65, 65, 65);
+    width: 50%;
+}
+
+.sans {
+    font-family: sans-serif;
 }
 
 .about {
@@ -441,11 +571,46 @@ h3 .fa-angle-double-down {
     min-height: 200px;
     padding: 14% 8%; 
     background-color: white;
-    /*background: linear-gradient(
-        to bottom,
-        rgba(255, 255, 255, 0.461),
-        rgba(255, 255, 255, 0.66)
-    );*/
+}
+
+.teacher-title {
+    color: rgb(86, 141, 170);
+    text-shadow: 1px 1px black;
+    line-height: 1;
+    margin-top: 0;
+}
+
+.large {
+    display: none;
+}
+
+.teacher-name {
+    margin-top: 5%;
+    font-family: Questrial;
+}
+
+/*.laurie-info .teacher-name, .laurie-info .teacher-title {
+    text-align: right;
+}*/
+
+.bio-button {
+    width: 40%;
+    margin-top: 5%;
+}
+
+.bio-button:hover {
+    text-shadow: 1px 1px rgb(125, 125, 125);
+    border: 2px silver solid;
+}
+
+/*.laurie-info .bio {
+    display: block;
+    margin-left: auto;
+
+}*/
+
+.about p {
+    margin-top: 4%;
 }
 
 .about-second-sentence {
@@ -453,17 +618,18 @@ h3 .fa-angle-double-down {
     margin-top: 21px;
 }
 
-/*.gold-box {
-    width: 40%;
-    max-width: 250px;
-    line-height: 0;
-    /*width: 100px;
-    height: 130px;*/
-    /*margin-right: 5%;
-    margin-bottom: 3%;
-    float: left;
-    background-color: rgb(255, 215, 0);
-}*/
+.dianna-info, .laurie-info, .jeff-info {
+    margin-top: 5%;
+}
+
+.laurie-pic-container {
+    clear: left;
+}
+
+.jeff-pic-container {
+    /*clear: right;*/
+    clear: left;
+}
 
 .head-shot {
     width: 40%;
@@ -478,14 +644,10 @@ h3 .fa-angle-double-down {
     top: 10px;*/
 }
 
-.lauren {
+/*.laurie-pic {
     margin-right: 0;
     margin-left: 5%;
     float: right;
-}
-
-/*.about p {
-    margin-top: 55px;
 }*/
 
 .container {
@@ -494,7 +656,7 @@ h3 .fa-angle-double-down {
     padding: 14% 8%;
 }
 
-.project-image {
+/*.project-image {
     border: 1px gray solid;
     width: 100%;
     min-height: 150px;
@@ -505,7 +667,7 @@ h3 .fa-angle-double-down {
 
 .project-margin {
     margin-top: 3%;
-}
+}*/
 
 h3 {
     margin-left: 0;
@@ -516,9 +678,18 @@ h3 {
 
 .teacher-title {
     font-size:23px;
+    margin-bottom: 3px;
 }
 
-.project p {
+.teacher-name {
+    margin-top: 5px;
+}
+
+.bold {
+    font-style: italic;
+}
+
+/*.project p {
     margin-left: 0;
     margin-top: 4%;
 }
@@ -526,36 +697,7 @@ h3 {
 .technologies {
     font-style: italic;
     font-size: 22px;
-}
-
-.button {
-    display: inline-block;
-    text-decoration: none;
-    font-family: 'Questrial', sans-serif;
-    font-size: 23px;
-    background-color:  rgb(11, 0, 61);
-    color: white;
-    border: 2px rgb(88, 88, 88) solid;
-    padding: 1.5% 3%;
-    margin: 6% 5% 4% 0;
-    cursor: pointer;   
-}
-
-/*.button {
-    margin-top: 6%;
-    margin-bottom: 4%;
-    margin-left: 0;
-    font-size: 23px;
-    padding: 1.5% 3%;
-    background-color:  rgb(11, 0, 61);
-    color: white;
-    cursor: pointer;
 }*/
-
-.button:hover {
-    color: gold;
-    border: 2px gold solid;
-}
 
 .contact-two a {
     /*color: rgb(136, 174, 102);
@@ -591,7 +733,9 @@ footer ul {
 }
 
 .blink {
-    animation: blink 1.5s ease-in infinite;
+    /*animation: blink 1.5s ease-in infinite;*/
+    animation: blink 3s ease-in infinite;
+
 }
   
 .social_icon {
@@ -611,6 +755,16 @@ footer ul {
 @keyframes blink {
     from, to { opacity: 1 }
     50% { opacity: 0 }
+}
+
+@media screen and (min-width: 350px) {
+    .small {
+        display: none;
+    }
+
+    .large {
+        display: inline;
+    }
 }
 
 @media screen and (min-width: 700px) {
@@ -644,13 +798,18 @@ footer ul {
         display: none;
     }
 
-    header {
+    /*header {
         margin-top: 2%;
-    }
+    }*/
 
     h1 {
-        margin-top: 40px;
+        margin-top: 3%;
         font-size: 40px;
+    }
+
+    .bold-text {
+        font-size: 80px;
+        font-weight: 500;
     }
 
     .hero-image {
@@ -663,13 +822,13 @@ footer ul {
     }
 
     .jd-slideshow-text li div p {
-        margin-top: 250px;
+        margin-top: 3%;
         font-size: 22px;
     }
 
-    .margin-change {
+    /*.margin-change {
         margin-top: 4%;
-    }
+    }*/
 
     /*.bold-text {
         display: block;
@@ -693,13 +852,46 @@ footer ul {
         display: none;
     }
 
-    .js-lesson-details {
+    .bio-button {
         display: block;
+    }
+
+    .details {
+        display: block;
+    }
+
+    .tuition-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .tuition-box {
+        width: 32%;
     }
 
     .container {
         padding-left: 12%;
         padding-right: 12%;
+    }
+
+    .laurie-pic {
+        margin-right: 0;
+        margin-left: 5%;
+        float: right;
+    }
+
+    .laurie-info .teacher-name, .laurie-info .teacher-title {
+        text-align: right;
+    }
+
+    .laurie-info .bio-button {
+        margin-right: 5%;
+        margin-left: auto;    
+    }
+
+    .jeff-pic-container {
+        clear: right;
     }
 
     .about-second-sentence {
@@ -733,13 +925,18 @@ footer ul {
     }
 
     header {
-        margin-top: 0;
+        /*margin-top: 0;*/
         /*padding: 9% 25%;*/
     }
 
     h1 {
-        margin-top: 25px;
+        margin-top: 6%;
         font-size: 50px;
+    }
+
+    .bold-text {
+        font-size: 100px;
+        font-weight: 500;
     }
 
     /*.jd-slideshow li span  {
@@ -755,12 +952,12 @@ footer ul {
     /*.jd-slideshow-text li div {
         left: 0;
         width: 30%;
-    }
+    }*/
 
     .jd-slideshow-text li div p {
-        margin-top: 100px;
-        font-size: 22px;
-    }*/
+        margin-top: 6%;
+        font-size: 25px;
+    }
 
     header p {
         margin-top: 0;
@@ -779,7 +976,20 @@ footer ul {
         font-size: 25px;
     }
 
+    .discount {
+        font-size: 20px;
+        margin-top: 3px;
+    }
+
     h3 {
         font-size: 27px;
     }
+
+    /*.bio-button {
+        display: none;
+    }
+
+    .biography {
+        display: block;
+    }*/
 }
