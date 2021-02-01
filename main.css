@@ -72,7 +72,7 @@ body {
     background-repeat: no-repeat;
     opacity: 0;
     z-index: 0;
-    animation: imageAnimation 30s linear infinite 0s;
+    animation: imageAnimation 40s linear infinite 0s;
 }
 
 .jd-slideshow-text li div {
@@ -84,7 +84,7 @@ body {
     height: auto;
     text-align: center;
     opacity: 0;
-    animation: titleAnimation 30s linear infinite 0s;
+    animation: titleAnimation 40s linear infinite 0s;
 }
 
 .jd-slideshow-text li div p {
@@ -99,38 +99,42 @@ body {
 
 .jd-slideshow li:nth-child(2) span {
     background-image: url('images/TapB.jpg');
-    animation-delay: 6s;
+    animation-delay: 8s;
 }
 
 .jd-slideshow li:nth-child(3) span {
     background-image: url('images/DeskLaptopTest6.png');
-    animation-delay: 12s;
+    animation-delay: 16s;
 }
 
 .jd-slideshow li:nth-child(4) span {
     background-image: url('images/TapFloorA.jpg');
-    animation-delay: 18s;
+    animation-delay: 24s;
 }
 
 .jd-slideshow li:nth-child(5) span {
     background-image: url('images/studioBackgroundA.jpg');
-    animation-delay: 24s;
+    animation-delay: 32s;
 }
 
 .jd-slideshow-text li:nth-child(2) div {
-    animation-delay: 6s;
+    /*animation-delay: 6s;*/
+    animation-delay: 8s;
 }
 
 .jd-slideshow-text li:nth-child(3) div {
-    animation-delay: 12s;
+    /*animation-delay: 12s;*/
+    animation-delay: 16s;
 }
 
 .jd-slideshow-text li:nth-child(4) div {
-    animation-delay: 18s;
+    /*animation-delay: 18s;*/
+    animation-delay: 24s;
 }
 
 .jd-slideshow-text li:nth-child(5) div {
-    animation-delay: 24s;
+    /*animation-delay: 24s;*/
+    animation-delay: 32s;
 }
 
 @keyframes imageAnimation {
@@ -389,23 +393,9 @@ h2 {
     cursor: pointer;   
 }
 
-/*.button {
-    margin-top: 6%;
-    margin-bottom: 4%;
-    margin-left: 0;
-    font-size: 23px;
-    padding: 1.5% 3%;
-    background-color:  rgb(11, 0, 61);
-    color: white;
-    cursor: pointer;
-}*/
-
 .button:hover {
-    /*color: gold;
-    border: 2px gold solid;*/
     text-shadow: 1px 1px silver;
     border: 2px silver solid;
-    /*font-size: 26px;*/
 }
 
 .toggle-button {
@@ -424,7 +414,6 @@ h2 {
 }
 
 .toggle-button:hover {
-    /*transform: scale(1.2);*/
     text-shadow: 1px 1px silver;
     border: 2px silver solid;
 }
@@ -529,10 +518,6 @@ h3 .fa-angle-double-down {
 }
 
 .schedule {
-    /*background-color: rgba(255, 255, 255, 0.413);
-    border: 3px rgb(136, 174, 102) solid;
-    border-radius: 10px;
-    margin-top: 2%;*/
     text-align: center;
 }
 
@@ -571,6 +556,10 @@ h4 {
     min-height: 200px;
     padding: 14% 8%; 
     background-color: white;
+}
+
+.dianna-info, .laurie-info, .jeff-info {
+    margin-top: 5%;
 }
 
 .teacher-title {
@@ -618,10 +607,6 @@ h4 {
     margin-top: 21px;
 }
 
-.dianna-info, .laurie-info, .jeff-info {
-    margin-top: 5%;
-}
-
 .laurie-pic-container {
     clear: left;
 }
@@ -637,11 +622,7 @@ h4 {
     line-height: 0;
     margin-right: 5%;
     margin-bottom: 3%;
-    /*border: 1px gold solid;*/
     float: left;
-    /*position: relative;*/
-    /*right: 10px;
-    top: 10px;*/
 }
 
 /*.laurie-pic {
@@ -655,19 +636,6 @@ h4 {
     min-height: 200px;
     padding: 14% 8%;
 }
-
-/*.project-image {
-    border: 1px gray solid;
-    width: 100%;
-    min-height: 150px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0;
-}
-
-.project-margin {
-    margin-top: 3%;
-}*/
 
 h3 {
     margin-left: 0;
@@ -689,24 +657,16 @@ h3 {
     font-style: italic;
 }
 
-/*.project p {
-    margin-left: 0;
-    margin-top: 4%;
-}
-
-.technologies {
-    font-style: italic;
-    font-size: 22px;
-}*/
-
 .contact-two a {
-    /*color: rgb(136, 174, 102);
-    text-shadow: 1px 1px 1px rgb(77, 99, 58);*/
     color: rgb(67, 127, 159);
 }
 
 .contact-two a:hover {
     color: gold;
+}
+
+.number {
+    display: inline-block;
 }
 
 footer {
