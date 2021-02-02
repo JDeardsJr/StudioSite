@@ -315,7 +315,7 @@ h1 {
 header p {
     line-height: 1.5;
     font-family: sans-serif;
-    text-shadow: 3px 3px 3px black;
+    text-shadow: 2px 2px 2px black;
     color: ghostwhite;
     font-weight: lighter;
 }
