@@ -430,6 +430,20 @@ h3 .fa-angle-double-down {
     margin-top: 9%;
 }
 
+.half-off {
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px gray;
+    background: linear-gradient(
+        to bottom,
+        rgb(136, 174, 102),
+        rgb(159, 206, 118)
+    );
+    padding: 1% 1%;
+    font-weight: lighter;
+    border-radius: 3px;
+}
+
 .tuition-box {
     background-color: white;
     border: 3px rgb(136, 174, 102) solid;
@@ -615,7 +629,7 @@ h3 {
     color: gold;
 }
 
-.number {
+.times, .number {
     display: inline-block;
 }
 
