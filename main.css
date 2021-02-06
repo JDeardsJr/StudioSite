@@ -573,7 +573,7 @@ h4 {
     margin-top: 4%;
 }
 
-.about-second-sentence {
+.about-second-sentence, .tuition-third-sentence {
     display: block;
     margin-top: 21px;
 }
@@ -676,6 +676,11 @@ footer ul {
 
 #payment-information {
     padding-top: 20%;
+    text-align: center;
+}
+
+.payment-types section {
+    text-align: left;
 }
 
 .above {
@@ -683,7 +688,8 @@ footer ul {
     display: none;
     margin-left: 5%;
     float: right;
-    border: 3px gray solid;
+    border: 2px gray solid;
+    box-shadow: 3px 3px 3px rgb(85, 85, 85);
 }
 
 .below {
@@ -693,7 +699,12 @@ footer ul {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10%;
-    border: 3px gray solid;
+    border: 2px gray solid;
+    box-shadow: 3px 3px 3px rgb(85, 85, 85);
+}
+
+.qr-right {
+    display: none;
 }
 
 .payment-credit {
@@ -711,7 +722,7 @@ footer ul {
     background-color: white;
     border: 2px solid gray;
     border-radius: 3px;
-    box-shadow: 2px 2px rgb(85, 85, 85);
+    box-shadow: 3px 3px 3px rgb(85, 85, 85);
     padding: 3%;
 }
 
@@ -846,16 +857,21 @@ footer ul {
         clear: right;
     }
 
-    .about-second-sentence {
+    .about-second-sentence, .tuition-third-sentence {
         display: inline;
         margin-top: 0;
     }
 
-    .above {
+    #payment-information {
+        padding-top: 15%;
+        text-align: left;
+    }
+
+    .above, .qr-right {
         display: inline;
     }
 
-    .below {
+    .below, .qr-above {
         display: none;
     }
 
@@ -920,6 +936,10 @@ footer ul {
 
     h3 {
         font-size: 27px;
+    }
+
+    #payment-information {
+        padding-top: 12%;
     }
 
     .payment-credit {
