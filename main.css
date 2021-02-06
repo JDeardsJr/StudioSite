@@ -191,7 +191,7 @@ footer {
     display: block;
 }
 
-.logo:hover {
+.logo-link:hover {
     border: 2px gold solid;
 }
 
@@ -674,6 +674,52 @@ footer ul {
     color: gold;
 }
 
+#payment-information {
+    padding-top: 20%;
+}
+
+.above {
+    width: 40%;
+    display: none;
+    margin-left: 5%;
+    float: right;
+    border: 3px gray solid;
+}
+
+.below {
+    display: block;
+    width: 80%;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+    border: 3px gray solid;
+}
+
+.payment-credit {
+    clear: right;
+    width: 100%;
+}
+
+.payment-type-info {
+    margin-top: 3%;
+    font-weight: bold;
+}
+
+.tuition-two {
+    margin-top: 5%;
+    background-color: white;
+    border: 2px solid gray;
+    border-radius: 3px;
+    box-shadow: 2px 2px rgb(85, 85, 85);
+    padding: 3%;
+}
+
+.tuition-two h3 {
+    margin-top: 0;
+    text-shadow: 1px 1px rgb(106, 105, 105);
+}
+
 @keyframes blink {
     from, to { opacity: 1 }
     50% { opacity: 0 }
@@ -709,11 +755,11 @@ footer ul {
     
     .navbar > ul > li {
         margin-left: 30px;
-        cursor: pointer;
     }
     
-    .navbar > ul > li:hover {
+    .navbar > ul > .anchor:hover {
         color: gold;
+        cursor: pointer;
     }
 
     .slider-menu {
@@ -805,6 +851,14 @@ footer ul {
         margin-top: 0;
     }
 
+    .above {
+        display: inline;
+    }
+
+    .below {
+        display: none;
+    }
+
 }
 
 @media screen and (min-width: 1024px) {
@@ -866,6 +920,14 @@ footer ul {
 
     h3 {
         font-size: 27px;
+    }
+
+    .payment-credit {
+        width: 50%;
+    }
+
+    .tuition-two p {
+        font-size: 20px;
     }
 
 }
