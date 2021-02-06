@@ -226,6 +226,12 @@ footer {
     display: none;
 }
 
+.tech-payment-header {
+    display: flex;
+    list-style-type: none;
+    font-family: 'Questrial', sans-serif;
+}
+
 .slider-menu {
     display: flex;
     flex-direction: row;
@@ -356,7 +362,8 @@ h2 {
     border: 2px white solid;
     border-radius: 5px;
     padding: 1.5% 3%;
-    margin: 6% 5% 4% 0;
+    /*margin: 6% 5% 4% 0;*/
+    margin: 6% 0 4% 0;
     cursor: pointer;   
 }
 
@@ -372,6 +379,8 @@ h2 {
         gold
     );
     color: ghostwhite;
+    font-family: 'Questrial', sans-serif;
+    font-size: 24px;
     text-shadow: 1px 1px rgb(67, 67, 67);
     border-color: rgb(86, 141, 170);
     border-radius: 5px;
@@ -385,9 +394,9 @@ h2 {
     border: 2px silver solid;
 }
 
-.toggle-button h3 {
+/*.toggle-button h3 {
     margin-top: 0;
-}
+}*/
 
 .hidden {
     display: none;
@@ -398,7 +407,13 @@ h2 {
     animation: blink 1.5s ease-in infinite;
 }
 
-h3 .fa-angle-double-down {
+/*h3 .fa-angle-double-down {
+    color: rgb(86, 141, 170);
+    text-shadow: none;
+    margin-left: 2%;
+}*/
+
+.toggle-button .fa-angle-double-down {
     color: rgb(86, 141, 170);
     text-shadow: none;
     margin-left: 2%;
@@ -674,7 +689,7 @@ footer ul {
     color: gold;
 }
 
-#payment-information {
+#payment-information, #tech-tips {
     padding-top: 20%;
     text-align: center;
 }
@@ -717,18 +732,31 @@ footer ul {
     font-weight: bold;
 }
 
-.tuition-two {
+.tuition-two, .tips-box {
     margin-top: 5%;
     background-color: white;
     border: 2px solid gray;
     border-radius: 3px;
-    box-shadow: 3px 3px 3px rgb(85, 85, 85);
+    box-shadow: 4px 4px 4px rgb(85, 85, 85);
     padding: 3%;
 }
 
-.tuition-two h3 {
+.tuition-two h3, .tips-box h3 {
     margin-top: 0;
     text-shadow: 1px 1px rgb(106, 105, 105);
+}
+
+.tech-tips {
+    text-align: left;
+}
+
+#tech-tips li {
+    list-style-position: inside;
+    margin-top: 2%;
+}
+
+.considerations {
+    text-align: center;
 }
 
 @keyframes blink {
@@ -862,7 +890,7 @@ footer ul {
         margin-top: 0;
     }
 
-    #payment-information {
+    #payment-information, #tech-tips {
         padding-top: 15%;
         text-align: left;
     }
@@ -938,7 +966,7 @@ footer ul {
         font-size: 27px;
     }
 
-    #payment-information {
+    #payment-information, #tech-tips {
         padding-top: 12%;
     }
 
@@ -946,7 +974,7 @@ footer ul {
         width: 50%;
     }
 
-    .tuition-two p {
+    .tuition-two p, .tips-box p {
         font-size: 20px;
     }
 
