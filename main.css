@@ -741,9 +741,23 @@ footer ul {
     padding: 3%;
 }
 
+.tuition-two {
+    margin-bottom: 5%;
+}
+
 .tuition-two h3, .tips-box h3 {
     margin-top: 0;
     text-shadow: 1px 1px rgb(106, 105, 105);
+}
+
+.double-asterisk {
+    margin-top: 1%;
+}
+
+.download-pdf {
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .tech-tips {
@@ -968,6 +982,10 @@ footer ul {
 
     #payment-information, #tech-tips {
         padding-top: 12%;
+    }
+
+    .invoice-asterisk {
+        font-size: 20px;
     }
 
     .payment-credit {
