@@ -689,7 +689,7 @@ footer ul {
     color: gold;
 }
 
-#payment-information, #tech-tips {
+#payment-information, #tech-tips, #student-registration, #portal-login {
     padding-top: 20%;
     text-align: center;
 }
@@ -760,6 +760,27 @@ footer ul {
     margin-right: auto;
 }
 
+.justify {
+    text-align: justify;
+}
+
+.techList-one {
+    background: linear-gradient(
+        to bottom,
+        /*rgb(147, 191, 109),
+        rgb(136, 174, 102)*/
+        rgba(155, 155, 155, 0.66),
+        rgba(128, 128, 128, 0.851)
+    );
+    color: white;
+    text-shadow: 2px 2px 2px rgb(50, 50, 50);
+    font-family: sans-serif;
+    font-weight: lighter;
+    padding: 2% 2% 3% 2%;
+    margin-top: 2%;
+    text-align: center;
+}
+
 .tech-tips {
     text-align: left;
 }
@@ -771,6 +792,38 @@ footer ul {
 
 .considerations {
     text-align: center;
+}
+
+.login-container {
+    line-height: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(147, 191, 109, 0.68),
+        rgba(136, 174, 102, 0.858)
+    );   
+    padding: 3%;
+    max-width: 386px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#student-registration {
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.registration-container {
+    line-height: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(113, 148, 82, 0.673),
+        rgba(136, 174, 102, 0.858)
+    );   
+    border-radius: 3px;
+    padding: 3% 0 3% 0;
+    max-width: 644px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @keyframes blink {
@@ -904,9 +957,14 @@ footer ul {
         margin-top: 0;
     }
 
-    #payment-information, #tech-tips {
+    #payment-information, #tech-tips, #student-registration, #portal-login {
         padding-top: 15%;
         text-align: left;
+    }
+
+    #student-registration {
+        padding-left: 12%;
+        padding-right: 12%;
     }
 
     .above, .qr-right {
@@ -980,7 +1038,7 @@ footer ul {
         font-size: 27px;
     }
 
-    #payment-information, #tech-tips {
+    #payment-information, #tech-tips, #student-registration, #portal-login {
         padding-top: 12%;
     }
 
