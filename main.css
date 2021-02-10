@@ -689,6 +689,10 @@ footer ul {
     color: white;
 }
 
+.static {
+    color: gold;
+}
+
 .fa:hover {
     color: gold;
 }
