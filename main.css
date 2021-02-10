@@ -660,7 +660,7 @@ footer ul {
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     color: white;
 }
@@ -674,6 +674,10 @@ footer ul {
 .blink {
     animation: blink 3s ease-in infinite;
 }
+
+.social-title {
+    display: none;
+}
   
 .social_icon {
     margin-left: 2px;
@@ -682,6 +686,10 @@ footer ul {
 }
 
 .fa {
+    color: white;
+}
+
+.fa:hover {
     color: gold;
 }
 
@@ -798,7 +806,8 @@ footer ul {
     line-height: 0;
     background: linear-gradient(
         to bottom,
-        rgba(147, 191, 109, 0.68),
+        /*rgba(147, 191, 109, 0.68),*/
+        rgba(255, 217, 0, 0.68),
         rgba(136, 174, 102, 0.858)
     );   
     padding: 3%;
@@ -955,6 +964,14 @@ footer ul {
     .about-second-sentence, .tuition-third-sentence {
         display: inline;
         margin-top: 0;
+    }
+
+    .social-title {
+        display: inline;
+    }
+
+    .fa {
+        color: gold;
     }
 
     #payment-information, #tech-tips, #student-registration, #portal-login {
