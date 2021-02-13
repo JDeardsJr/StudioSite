@@ -305,6 +305,12 @@ header p {
     font-weight: lighter;
 }
 
+.main-jumper {
+    position: relative; 
+    top: 75px; 
+    font-size: 30px;
+}
+
 .margin-change {
     display: none;
 }
@@ -331,7 +337,7 @@ main {
 .valentines {
     text-align: left;
     min-height: 200px;
-    padding: 14% 12%;
+    padding: 20% 12%;
     background: linear-gradient(
         to bottom,
         rgba(255, 255, 255, 0.562),
@@ -350,16 +356,10 @@ main {
     text-shadow: 1px 1px 1px white;
 }
 
-/*.valentines p {
-    font-weight: lighter;
-    color: white;
-    text-shadow: 2px 2px 2px black;
-}*/
-
 .canvas {
     text-align: left;
     min-height: 200px;
-    padding: 14% 12%;
+    padding: 20% 12%;
     background: linear-gradient(
         to bottom,
         rgba(255, 255, 255, 0.342),
@@ -425,10 +425,6 @@ h2 {
     border: 2px silver solid;
 }
 
-/*.toggle-button h3 {
-    margin-top: 0;
-}*/
-
 .hidden {
     display: none;
 }
@@ -437,12 +433,6 @@ h2 {
     transform: rotate(180deg);
     animation: blink 1.5s ease-in infinite;
 }
-
-/*h3 .fa-angle-double-down {
-    color: rgb(86, 141, 170);
-    text-shadow: none;
-    margin-left: 2%;
-}*/
 
 .toggle-button .fa-angle-double-down {
     color: rgb(86, 141, 170);
@@ -810,8 +800,6 @@ footer ul {
 .techList-one {
     background: linear-gradient(
         to bottom,
-        /*rgb(147, 191, 109),
-        rgb(136, 174, 102)*/
         rgba(155, 155, 155, 0.66),
         rgba(128, 128, 128, 0.851)
     );
@@ -841,7 +829,6 @@ footer ul {
     line-height: 0;
     background: linear-gradient(
         to bottom,
-        /*rgba(147, 191, 109, 0.68),*/
         rgba(255, 217, 0, 0.68),
         rgba(136, 174, 102, 0.858)
     );   
@@ -882,6 +869,17 @@ footer ul {
 
     .large {
         display: inline;
+    }
+}
+
+@media screen and (min-width: 457px) {
+    h1 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .main-jumper {
+        top: 50px;
     }
 }
 
@@ -940,9 +938,21 @@ footer ul {
         font-size: 22px;
     }
 
+    h1 {
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+
+    .main-jumper {
+        top: 70px;
+    }
+
+    .valentines {
+        padding: 15% 12%;
+    }
+
     .canvas {
-        padding-left: 12%;
-        padding-right: 12%;
+        Padding: 15% 12%;
         line-height: 2;
     }
 
@@ -1057,6 +1067,15 @@ footer ul {
         width: 250px;
         margin-top: 1%;
         margin-bottom: 0;
+    }
+
+    h1 {
+        margin-bottom: 0;
+    }
+
+    .main-jumper {
+        top: 105px;
+        font-size: 40px;
     }
 
     p {
