@@ -87,7 +87,9 @@ body {
 }
 
 .jd-slideshow li:nth-child(1) span {
-    background-image: url('images/pianoBackgroundEditL.jpeg')
+    /*background-image: url('images/pianoBackgroundEditL.jpeg')*/
+    background-image: url('images/valentineImageA.png')
+
 }
 
 .jd-slideshow li:nth-child(2) span {
@@ -106,7 +108,8 @@ body {
 }
 
 .jd-slideshow li:nth-child(5) span {
-    background-image: url('images/studioBackgroundA.jpg');
+    /*background-image: url('images/studioBackgroundA.jpg');*/
+    background-image: url('images/pianoBackgroundEditL.jpeg');
     animation-delay: 32s;
 }
 
@@ -324,6 +327,34 @@ p {
 main {
     margin-bottom: 15%;
 }
+
+.valentines {
+    text-align: left;
+    min-height: 200px;
+    padding: 14% 12%;
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.562),
+        rgba(255, 255, 255, 0.256)
+      ),
+      url('images/valentineWebsiteImageB.png');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    border-top: 1px gray solid;
+    border-bottom: 1px gray solid;
+}
+
+.valentines h2 {
+    color: rgb(28, 96, 133);
+    text-shadow: 1px 1px 1px white;
+}
+
+/*.valentines p {
+    font-weight: lighter;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}*/
 
 .canvas {
     text-align: left;
