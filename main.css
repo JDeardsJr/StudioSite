@@ -571,7 +571,7 @@ h4 {
 .about {
     text-align: left;
     min-height: 200px;
-    padding: 14% 8%; 
+    padding: 20% 8%; 
     background-color: white;
 }
 
@@ -987,6 +987,10 @@ footer ul {
         padding-right: 12%;
     }
 
+    .about {
+        Padding: 15% 8%;
+    }
+
     .laurie-pic {
         margin-right: 0;
         margin-left: 5%;
@@ -1094,6 +1098,10 @@ footer ul {
 
     .canvas, .container {
         padding: 9% 15%;
+    }
+
+    .about {
+        Padding: 9% 8%;
     }
 
     h2 {
