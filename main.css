@@ -159,6 +159,7 @@ nav {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 300;
 }
 
 footer {
@@ -393,7 +394,6 @@ h2 {
     border: 2px white solid;
     border-radius: 5px;
     padding: 1.5% 3%;
-    /*margin: 6% 5% 4% 0;*/
     margin: 6% 0 4% 0;
     cursor: pointer;   
 }
@@ -401,6 +401,13 @@ h2 {
 .button:hover {
     text-shadow: 1px 1px silver;
     border: 2px silver solid;
+}
+
+.back {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 100px;
 }
 
 .toggle-button {
@@ -727,6 +734,10 @@ footer ul {
     text-align: center;
 }
 
+#order-form {
+    min-height: 100vh;
+}
+
 .payment-types section {
     text-align: left;
 }
@@ -834,8 +845,26 @@ footer ul {
     );   
     padding: 3%;
     max-width: 386px;
+    min-height: 150px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 25px;
+}
+
+.login-p {
+    text-align: center;
+    margin-top: 50px; 
+}
+
+.login-form, .gift-form {
+    position: relative; 
+    bottom: 25px;
+}
+
+.loading {
+    color: black; 
+    text-shadow: 2px 2px 2px white;
+    text-align: center; 
 }
 
 #student-registration {
